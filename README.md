@@ -1,4 +1,4 @@
-# Binance Blacklist Tool
+Binance Blacklist Tool
 ========================
 Python script to update appsettings.json and add newly listed coins to the SomOnlyPairs list.
 
@@ -6,6 +6,6 @@ This will overwrite your appsettings.json file when you execute it.  Make sure t
 
 Probably only works on Linux installations, so use at your own risk.
 
-# Donate
-========
+Donate
+======
 LTC: LhKHJUWCkKaAJYUL78zzxWetZU8EZWbwSn
