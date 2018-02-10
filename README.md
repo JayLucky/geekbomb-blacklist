@@ -1,1 +1,5 @@
-# geekbomb-blacklist
+# Binance Blacklist Tool
+
+Python script to update appsettings.json and add newly listed coins to the SomOnlyPairs list.
+
+This will overwrite your appsettings.json file when you execute it.  Make sure to back it up first!
