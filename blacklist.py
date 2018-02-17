@@ -8,8 +8,8 @@ from datetime import datetime
 from collections import OrderedDict
 
 #
-# Update the AGE setting to the number of days you wish to blacklist.
-# Update the APPSETTINGS to match your file location.
+# Update AGE to the number of days you wish to blacklist.
+# Update APPSETTINGS to match your file location.
 # Update SOMDEFAULTS to change the list of default coins.
 #
 ################################################################################
@@ -18,7 +18,10 @@ APPSETTINGS = '/var/opt/ptfeeder/config/appsettings.json'
 SOMDEFAULTS = ['DGD','TRIG','MTL','SWIFT','ARDR','SAFEX','BTA','DAR','DRACO','SLING','CRYPT','DOGE','UNO','SC','INCNT','NAUT','SJCX','NOTE','TKN','TIME']
 
 #
-# Core - Don't edit below unless you are familiar with Python
+# Don't edit below unless you are familiar with Python!
+# This pulls the list of newly added coins from Binance
+# and only blacklists the coins that are under AGE days
+# from the current UTC time the script is ran.
 #
 ################################################################################
 BINANCE_BASE = "https://support.binance.com"
