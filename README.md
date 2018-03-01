@@ -1,6 +1,6 @@
 Binance Blacklist Tool
 ========================
-Python script to update PTFeeder appsettings.json and add newly listed coins to the SomOnlyPairs list.
+Python script to update PTFeeder appsettings.json and add newly listed coins to the SomOnlyCoins list.
 
 ```
 pip install -r requirements.txt

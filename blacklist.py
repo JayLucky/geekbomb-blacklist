@@ -15,7 +15,7 @@ from collections import OrderedDict
 ################################################################################
 AGE = 15
 APPSETTINGS = '/var/opt/ptfeeder/config/appsettings.json'
-SOMDEFAULTS = ['DGD','TRIG','MTL','SWIFT','ARDR','SAFEX','BTA','DAR','DRACO','SLING','CRYPT','DOGE','UNO','SC','INCNT','NAUT','SJCX','NOTE','TKN','TIME']
+SOMDEFAULTS = ['DGD','TRIG','MTL','SWIFT','ARDR','SAFEX','BTA','DAR','DRACO','SLING','CRYPT','DOGE','UNO','SC','INCNT','NAUT','SJCX','NOTE','TKN','TIME','BCC','DLT','HSR']
 
 #
 # Don't edit below unless you are familiar with Python!
@@ -43,7 +43,7 @@ def get_blacklist():
 def update_settings(blCoins):
     with open(APPSETTINGS) as f:
         data = json.load(f, object_pairs_hook=OrderedDict)
-        data['General']['SomOnlyPairs'] = ','.join(SOMDEFAULTS)+','+','.join(blCoins)
+        data['General']['SomOnlyCoins'] = ','.join(SOMDEFAULTS)+','+','.join(blCoins)
     with open(APPSETTINGS,'w') as f:
         json.dump(data, f, indent=2)
 
